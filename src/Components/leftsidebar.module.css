@@ -1,0 +1,170 @@
+.sidebar {
+  background-color: var(--color-dark-grafite);
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 3vh;
+  height: 95vh;
+}
+
+.topImage {
+  padding-bottom: 30px;
+  width: 22vw;
+  height: 14vh;
+  object-fit: cover;
+}
+
+.centerImage {
+  width: 8vw;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  margin-top: 1vh;
+  border: 1px solid var(--color-green);
+  border-radius: 15%;
+  object-fit: contain;
+  cursor: pointer;
+  box-shadow: 0 4px 8px var(--color-shadow);
+}
+
+.centerImage:hover {
+  box-shadow: inset 0 0 15px var(--color-green);
+  border: 2px solid var(--color-dark-green);
+  transition: 0.5s;
+}
+
+.title {
+  font-size: 1.5em;
+  color: var(--color-white);
+  text-align: center;
+  margin-top: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px var(--color-shadow);
+}
+
+.text1 {
+  font-size: 1.3em;
+  color: var(--color-grey);
+  text-align: center;
+  margin-top: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px var(--color-shadow);
+}
+
+.text1:hover {
+  color: var(--color-green);
+  transition: 0.5s;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0.8vh;
+  border-radius: 15px;
+  background: transparent;
+  color: var(--color-white);
+  cursor: pointer;
+  box-shadow: 0 4px 8px var(--color-shadow);
+}
+
+.buttonGit {
+  margin-top: 15px;
+  border: 2px solid var(--color-green);
+}
+
+.buttonGit:hover {
+  box-shadow: inset 0 0 15px var(--color-green);
+  transition: 0.5s;
+  background-color: var(--color-semi-transparent-grey);
+}
+
+.buttonEdin {
+  margin-top: 15px;
+  border: 2px solid var(--color-linkedin);
+}
+
+.buttonEdin:hover {
+  box-shadow: inset 0 0 15px var(--color-light-blue);
+  transition: 0.5s;
+  background-color: var(--color-semi-transparent-grey);
+}
+
+.link {
+  font-size: 1em;
+  text-decoration: none;
+}
+
+.linkGit {
+  color: var(--color-github);
+}
+
+.linkedin {
+  color: var(--color-linkedin-hover);
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 50vw;
+  }
+
+  .topImage {
+    width: 40vw;
+    height: auto;
+  }
+
+  .centerImage {
+    width: 16vw;
+  }
+
+  .title,
+  .text1 {
+    font-size: 1.2em;
+  }
+
+  .link {
+    font-size: 0.9em;
+  }
+
+  .button {
+    padding: 1vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    width: 100%;
+  }
+
+  .topImage {
+    width: 100%;
+    height: auto;
+  }
+
+  .centerImage {
+    background: none;
+    position: absolute;
+    top: 17%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(
+      -50%,
+      -50%
+    ); /* Move o elemento para que o centro fique no ponto (50%, 50%) */
+    width: 44vw;
+  }
+
+  .title,
+  .text1 {
+    font-size: 1em;
+  }
+
+  .link {
+    font-size: 0.8em;
+  }
+
+  .button {
+    padding: 1.2vh;
+  }
+}

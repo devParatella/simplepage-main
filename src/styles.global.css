@@ -1,0 +1,35 @@
+:root {
+  --color-black: black;
+  --color-white: white;
+  --color-grey: grey;
+  --color-green: green;
+  --color-light-grey: #ddd;
+  --color-dark-grey: rgba(0, 0, 0, 0.8);
+  --color-semi-transparent-grey: rgba(59, 59, 59, 0.843);
+  --color-semi-transparent-white: rgba(255, 255, 255, 0.1);
+  --color-semi-transparent-black: rgba(0, 0, 0, 0.378);
+  --color-dark-grey-overlay: rgba(38, 38, 38, 0.947);
+  --color-medium-grey-overlay: rgba(64, 64, 64, 0.82);
+  --color-linkedin: rgb(0, 28, 128);
+  --color-light-blue: rgb(42, 64, 143);
+  --color-linkedin-hover: rgb(76, 141, 222);
+  --color-github: rgb(30, 170, 30);
+  --color-github-hover: rgb(92, 251, 92, 0.584);
+  --color-shadow: rgba(255, 255, 255, 0.177);
+  --color-dark-green: rgb(41, 128, 0);
+  --color-dark-shadow: rgb(50, 112, 50);
+  --color-light-green-shadow: green;
+  --color-green-shadow: green;
+  --color-dark-grafite: #12110f;
+}
+
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
